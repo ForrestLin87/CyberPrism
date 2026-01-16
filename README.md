@@ -77,11 +77,18 @@ Follow these instructions to get a local copy of the project up and running.
     ```
     - *Note: The application includes a `DatabaseSeeder` that will automatically create the database and populate it with sample data on the first run.*
 
-3.  **Run the Backend Server**
-    ```bash
-    cd CyberPrism.Server
-    dotnet run
-    ```
+3.  ### 3. Run the Server
+Simply run the server application.
+
+**Option A: Using Visual Studio**
+1. Right-click `CyberPrism.Server` project.
+2. Select **debug** -> **Start New Instance** (or just run the project).
+
+**Option B: Using CLI**
+```bash
+cd CyberPrism.Server
+dotnet run
+```
     - The API will launch (default: `http://localhost:5133`). Keep this terminal window open.
 
 4.  **Launch the Client Application**
