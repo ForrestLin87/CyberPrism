@@ -23,6 +23,8 @@
     <Compile Remove="Views\**\*.xaml" />
     <Compile Remove="Events\**\*.cs" />
     <Compile Remove="Services\RestService.cs" />
+    <Compile Remove="Services\IAppSettingsService.cs" />
+    <Compile Remove="Services\JsonAppSettingsService.cs" />
     <Compile Remove="Models\AppSettings.cs" />
     <Compile Remove="Models\SharedModels.cs" />
   </ItemGroup>
