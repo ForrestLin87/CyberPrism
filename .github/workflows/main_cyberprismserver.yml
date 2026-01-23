@@ -30,7 +30,7 @@ jobs:
         run: dotnet build CyberPrism.Server/CyberPrism.Server.csproj -c Release -r win-x86 --no-restore
 
       - name: Publish
-        run: dotnet publish CyberPrism.Server/CyberPrism.Server.csproj -c Release -o "${{env.DOTNET_ROOT}}/myapp" -r win-x86 --self-contained false --no-build
+        run: dotnet publish CyberPrism.Server/CyberPrism.Server.csproj -c Release -o "${{env.DOTNET_ROOT}}/myapp"
   
       - name: Upload artifact for deployment job
         uses: actions/upload-artifact@v4
@@ -67,6 +67,7 @@ jobs:
           slot-name: 'Production'
           package: ./publish
           
+
 
 
 
