@@ -7,7 +7,10 @@ using Microsoft.EntityFrameworkCore;
 /// </summary>
 
 var builder = WebApplication.CreateBuilder(args);
-builder.WebHost.UseUrls("http://localhost:5133");
+if (builder.Environment.IsDevelopment())
+{
+    builder.WebHost.UseUrls("http://localhost:5133");
+}
 
 // 1. Database: Configure PostgreSQL
 builder.Services.AddDbContext<IndustrialDbContext>(options =>
